@@ -11,7 +11,8 @@
 </head>
 <body>
   <!-- Implement a skip to main! -->
-  <div class="skip" tabindex=0><a href="#form">Skip to Main Content</a></div>
+    <div class="skip" tabindex=0><a href="">Skip to Main Content</a></div>
+    <main>
      <form 
           action="https://formspree.io/f/mwplknjn"
           method="POST">
@@ -19,14 +20,16 @@
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
         <div class="radio">
-          <label>Area of Submission:</label><br>
           <!-- How can the label and button line up and be easily navigatable? -->
-          <input type="radio" id="travel" name="interest" value="travel" required>
-          <label for="travel">Travel</label><br>
-          <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
-          <label for="recipe">Recipe</label><br>
-          <input type="radio" id="pets" name="interest" value="pets">
-          <label for="pets">Pets</label><br><br>
+          <fieldset>
+            <legend>Area of Submission:</legend>
+            <input type="radio" id="travel" name="interest" value="travel" required>
+            <label for="travel">Travel</label><br>
+            <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+            <label for="recipe">Recipe</label><br>
+            <input type="radio" id="pets" name="interest" value="pets">
+            <label for="pets">Pets</label><br><br>
+        </fieldset>
       </div>
 
         <label for="message">Message:</label>
@@ -39,5 +42,6 @@
 
         <button type="reset">Reset</button>
       </form>
+    </main>
 </body>
 </html>
